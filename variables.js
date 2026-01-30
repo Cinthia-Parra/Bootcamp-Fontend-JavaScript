@@ -32,6 +32,10 @@ console.log(division);
 let resultado = 10 % 3; //1
 console.log(resultado);
 
+//acumuladores
+let contador = 0;
+contador += 5; //contador = contador + 5
+console.log(contador);
 
 //comparacion estricta
 console.log(numeroA === numeroB); //false   
@@ -48,7 +52,7 @@ console.log(edad < 18); //false
 console.log(!(edad < 18)); //true 
 console.log(!(edad >= 18)); //false
 
-//modulo
+//modulo (para saber si es entero o no, ejemplo caundo divides si te da cero es entero si no entonces tiene . con decimales, entonces ya no es entero las partes)
 // ** -> exponente
 let exp = nummeroA ** 3; //10^3 = 10*10*10 = 1000
 console.log(exp);
@@ -66,11 +70,28 @@ let tieneDinero = false;
 console.log(edad >= 18 && tieneLicencia); //false  
 console.log(edad >= 18 || tieneDinero); //true
 
-//estructuras de contro
+//estructuras de control / condicionales
 
 //if -> si esto, Else -> si no esto otro
 if (edad >= 18 && tieneLicencia) {
     console.log("Puede conducir");
 } else {
     console.log("No puede conducir");
+}
+
+//Ejercicios de operadores logicos
+
+//AND (Y) &&
+//OR (O) ||
+//NOT (NO) !
+
+
+let edadVotante = 25;
+let tieneINE = true;
+
+
+if (edadVotante >= 18 && tieneINE) {
+    console.log('Puedes votar en las elecciones.');
+} else {
+    console.log('No puedes votar.');
 }
