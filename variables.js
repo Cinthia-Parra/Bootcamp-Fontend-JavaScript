@@ -95,3 +95,27 @@ if (edadVotante >= 18 && tieneINE) {
 } else {
     console.log('No puedes votar.');
 }
+
+
+let numero = 5;
+numero = parseInt(numero);
+
+//si queremos saber si es par o impar
+
+if (numero % 2 === 0) {
+    console.log("El número es par.");
+} else {
+    console.log("El número es impar.");
+}
+
+console.log()
+
+let esPremium = false;
+let totalCompa = 120;
+let esFinDeSemana = true;
+
+if (esPremium || totalCompa > 1000 && esFinDeSemana) {
+    console.log("Descuento aplicado.");
+}else {
+    console.log("No aplica descuento.");   
+}
