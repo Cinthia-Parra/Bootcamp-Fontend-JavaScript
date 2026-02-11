@@ -40,7 +40,7 @@ const disco = {
     }
 }
 
-//CONSOLES LOGS PARA VER LOS VALORES
+//-----------CONSOLES LOGS PARA VER LOS VALORES---------------
 
 //acceder a losdatos con notacion de punto
 console.log(disco.artista);
