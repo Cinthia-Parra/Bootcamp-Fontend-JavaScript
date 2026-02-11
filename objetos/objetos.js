@@ -32,10 +32,11 @@ const disco = {
         this.canciones.push(nombre);
         console.log(`Canción "${nombre}" agregada al disco.`);
     },
+
     //elminiar una cancion del disco
     eliminarCancion(nombre) {
-        this.camnciones.pop(nombre)
-        this.console.log(`Canción "${nombre}" eliminada al disco.`)
+        this.canciones.pop(nombre)
+        console.log(`Canción "${nombre}" eliminada del disco.`)
     }
 }
 
@@ -58,8 +59,10 @@ disco.mostrarCanciones();
 console.log('----------agregar objeto con push ----------');
 disco.agregrarCancion('hola');
 disco.mostrarCanciones();
-// disco.eliminarCancion('hola') falta el de delete 
-// disco.mostrarCanciones();
+
+console.log('----------eliminar objeto con push ----------');
+disco.eliminarCancion('hola');
+disco.mostrarCanciones();
 
 console.log('----------desestructurar ----------');
 //Desesctructurar es SACAR cosas de un objeto, SIN necesidad de escribir objeto.propiedad
