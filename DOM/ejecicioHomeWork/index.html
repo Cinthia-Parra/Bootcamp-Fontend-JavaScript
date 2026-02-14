@@ -1,0 +1,36 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Introduccion a JS</title>
+</head>
+<body>
+        <header>
+            <section>
+                <p id="texto">Formulario de comentarios</p>
+            </section>
+        </header>
+
+        <main>
+            <div class="mainContainComents">
+                <form>
+                    <label for="nombre">Escribe tu comentario</label>
+                    <input 
+                    type="text" 
+                    id="comentario" 
+                    placeholder="Escribe aquí">
+
+                    <button id="btnSubmit">enviar comentario</button>
+                </form>
+                <div class="containComents">
+                    <p id="coments"></p>
+                    <button id="btnDelete">Eliminar todos los comentarios</button>
+                </div>
+            </div>
+        </main>
+
+    <!--Enlazando mi archivo HTML con mi archivo JS-->
+    <script src="manejoDOM.js"></script>
+</body>
+</html>

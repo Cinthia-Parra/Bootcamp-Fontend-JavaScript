@@ -1,0 +1,18 @@
+
+.mainContainComents{
+    background-color: rgb(200, 180, 218);
+    border-radius: 1rem;
+    width: max-content;
+    height: auto;
+    padding: 1rem;
+}
+
+.containComents{
+    background-color: rgb(230, 221, 240);
+    padding: 1rem; 
+    border-radius: 1rem;
+}
+
+#btnDelete {
+    display: none;
+}
