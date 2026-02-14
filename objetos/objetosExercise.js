@@ -7,12 +7,14 @@
 // Opcional: agregar una propiedad que contenga la lista de capítulos del libro y métodos que permitan agregar y eliminar capítulos del libro.
 
 
-//ONjeto de libro con propiedades
+//Objeto de libro con propiedades
 const Libro = {
     titulo: 'Los juegos del hambre',
     paginas: 458,
     autor: 'Stean Jones',
     idiona: 'Español',
+    anoDePublicacion: 2001,
+    disponibilidad: true,
 
     capitulos: [
         'El inicio de un Rey',
@@ -20,9 +22,43 @@ const Libro = {
         'Ultima cena',
     ],
 
+//metodo para mosrar los capitulos del libro
+mostrarCapitulos () {
+    this.capitulos.forEach((capitulos,i) => {
+        console.log(`${i + 1}- ${capitulos}`);
+    }
+)
+},
+
     // funcion para mostrar infor//
-MostrarInformacion () {
-    console.log(`${titulo} del ${autor} tiene ${paginas}`)
-}
+describirLibro () {
+    console.log(`EL libro de: ${this.titulo}, del autor ${this.autor} ,\ntiene ${this.paginas}, fué publicado en ${this.anoDePublicacion}. \nActualmente se enucuentra disponible: ${Libro.disponibilidad}\n`);
+},
+
+//Agregar una capitulo 
+addCapter (capituloAgregado) {
+    this.capitulos.push(capituloAgregado)
+    console.log(`Capitulo ${capituloAgregado} fue agregado`);
+},
+//ELiminar un capitulo
+deleteCapter (capituloEliminado) {
+    this.capitulos.pop(capituloEliminado)
+    console.log(`Capitulo ${capituloEliminado} fue eliminado`);
+},
+
+
 }
 
+Libro.describirLibro();
+console.log('Los capitulos de este libro son:')
+console.log('--------------------------------')
+Libro.mostrarCapitulos();
+
+
+console.log('--------------------------------')
+Libro.addCapter('El quiebre');
+Libro.mostrarCapitulos();
+
+console.log('--------------------------------')
+Libro.deleteCapter('El quiebre');
+Libro.mostrarCapitulos();
