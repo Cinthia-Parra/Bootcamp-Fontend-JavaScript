@@ -14,6 +14,7 @@ const contentComent = document.getElementById("comentario"); //la informacion de
 const showComent = document.getElementById("coments"); //donde iran los comentarios
 const listaComents = [];//array para guardar los comentarios
 const deteleteComents = document.getElementById ('btnDelete'); //para manipular el boton de comentarios
+//gdgd
 
 
 //---------------Funciones/helpers
