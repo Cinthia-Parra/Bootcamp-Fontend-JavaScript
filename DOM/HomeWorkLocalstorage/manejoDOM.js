@@ -6,6 +6,8 @@
 // Cuando el usuario haga clic en el botón, el comentario debe aparecer en la página debajo del formulario.
 // Los estudiantes pueden agregar un botón para eliminar comentarios si lo desean.
 // Los comentarios deben aparecer junto con la fecha y hora de publicación. 
+
+//SE ITERO ESTE ARCHIVO PARA AGREGAR EL USO DE LOCALSTORAGE
 // Manejar local storage
 
 
