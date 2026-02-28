@@ -1,0 +1,115 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fondo general */
+body {
+    background: linear-gradient(135deg, #d8c6f2, #f3ecff);
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;   
+    align-items: center;     
+    justify-content: center; 
+}
+
+/* Header */
+header {
+    margin-bottom: 1.5rem;
+}
+
+#texto {
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    color: #4a3f6b;
+}
+
+/* Contenedor principal */
+.mainContainComents {
+    background-color: white;
+    border-radius: 1rem;
+    width: 400px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+label {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+input {
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border 0.2s ease;
+}
+
+input:focus {
+    border-color: #8b6dd8;
+}
+
+/* Botón enviar */
+#btnSubmit {
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #8b6dd8;
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+#btnSubmit:hover {
+    background-color: #6f54c2;
+}
+
+/* Contenedor comentarios */
+.containComents {
+    background-color: #f5f0ff;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+/* Cada comentario */
+#coments p {
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+    border-left: 4px solid #8b6dd8;
+}
+
+/* Botón eliminar */
+#btnDelete {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #e74c3c;
+    color: white;
+    cursor: pointer;
+    display: none;
+    transition: background 0.2s ease;
+}
+
+#btnDelete:hover {
+    background-color: #c0392b;
+}
