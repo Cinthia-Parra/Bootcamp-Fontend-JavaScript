@@ -1,0 +1,51 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Introduccion a JS</title>
+</head>
+<body>
+    <main>
+        <div class="mainContainer">
+            <h1> Mis Actividades</h1>
+            <div class="displayContainerActivity">
+                <div class="containerAddActivity">
+                    <p>Nueva Actividad</p>
+                    <input type="text" id="itemImputTarea" placeholder="escribe tu Actividad">
+                    <p>Categoria</p>
+                    <select id="prioritySection">
+                        <option value="urgente">URGENTES</option>
+                        <option value="importante">IMPORTANTES</option>
+                        <option value="paraDespues">PARA DESPUES</option>
+                        <option value="semana">SIGUIENTE SEMANA</option>
+                    </select>
+                    <button id="addItemButtonTarea">Agregar</button>
+                </div>
+                <div class="mainPriorityLIst">
+                    <div>
+                        <p>🔴 URGENTES</p>
+                        <ul id="containterListUrgenci"></ul>
+                    </div>
+                    <div>
+                        <p>🟡 IMPORTANTES</p>
+                        <ul id="containterListImportant"></ul>
+                    </div>
+                    <div>
+                        <p>🟢 PARA DESPUES</p>
+                        <ul id="containterListLater"></ul>
+                    </div>
+                    <div>
+                        <p>🔵 SIGUIENTE SEMANA</p>
+                        <ul id="containterListNextWeek"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <!--Enlazando mi archivo HTML con mi archivo JS-->
+    <script src="ManagerActivity.js"></script>
+</body>
+</html>
