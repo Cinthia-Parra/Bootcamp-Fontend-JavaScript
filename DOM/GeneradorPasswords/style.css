@@ -1,0 +1,166 @@
+/* Variables  */
+:root {
+    --bg-dark: #121212;
+    --card-bg: #1e1e1e;
+    --accent: #02b930; 
+    --accent-hover: #0d912e;
+    --text-main: #ffffff;
+    --text-muted: #a0a0a0;
+    --input-bg: #2d2d2d;
+    --success: #22c55e;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contenedor con profundidad (Shadow) */
+.container {
+    background-color: var(--card-bg);
+    padding: 30px;
+    width: 100%;
+    max-width: 420px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    border: 1px solid #2a6150;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Caja de contraseña */
+.password-box {
+    display: flex;
+    background-color: var(--input-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.password-box:focus-within {
+    border-color: var(--accent);
+}
+
+.password-box input {
+    flex: 1;
+    padding: 12px 15px;
+    background: transparent;
+    border: none;
+    color: var(--accent);
+    font-family: 'Courier New', monospace; 
+    font-size: 1.1rem;
+    font-weight: bold;
+    outline: none;
+}
+
+.password-box button {
+    background-color: #3d3d3d;
+    color: white;
+    padding: 0 15px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.password-box button:hover {
+    background-color: #4d4d4d;
+}
+
+/* Estilos de las opciones */
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+/* Checkboxes  */
+input[type="checkbox"] {
+    accent-color: var(--accent);
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+input[type="number"] {
+    background: var(--input-bg);
+    border: 1px solid #444;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    width: 60px;
+    outline: none;
+}
+
+/* Feedback de seguridad */
+.strength {
+    background: #2a2a2a;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+#strengthText {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Botón principal  */
+#generateBtn {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--accent);
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.1s, background 0.3s;
+}
+
+#generateBtn:hover {
+    background-color: var(--accent-hover);
+    transform: translateY(-1px);
+}
+
+#generateBtn:active {
+    transform: translateY(0);
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+}
