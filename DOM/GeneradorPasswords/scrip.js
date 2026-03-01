@@ -84,3 +84,7 @@ function evaluarSeguridad(pass){ // funcion de seguridad
 //Llamados ---ocupamos dos detonantes que activaran las funciones
 generateBtn.addEventListener("click", generarPassword); //genrear contrasela
 copyBtn.addEventListener("click", copiarPassword);//copiar ocntraseña
+
+
+
+///se mejora con una mejor gestion de los filtros para definir si es categoria se fortaleza y limitando a minimo 6 caracteres, tambien que no puedan escribir y mas adelante poner una mejor UX para la seleccion de la logitud de la passsword
